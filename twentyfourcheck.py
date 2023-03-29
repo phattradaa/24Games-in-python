@@ -25,13 +25,18 @@ class Solution(object):
         return False
     
 def main(): 
-    x = input("Enter your number:").split(" ")
-    y = []
-    # print(x)
-    for i in range(len(x)): 
-        a = int(x[i])
-        y.append(a)
-    twentyfour = Solution()
-    print(twentyfour.judge_point_24(y))
-
+    z = True
+    while (z) : 
+        x = input("Enter your number:").split(" ")
+        y = []
+        for i in range(len(x)): 
+            a = int(x[i])
+            y.append(a)
+        twentyfour = Solution()
+        print(twentyfour.judge_point_24(y))
+        
+        e = input("Exit:")
+        if e == "Yes": 
+            z = False 
+            break
 main()
